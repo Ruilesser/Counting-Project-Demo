@@ -38,6 +38,7 @@
             subButton = new Button();
             multButton = new Button();
             divButton = new Button();
+            exitButton = new Button();
             SuspendLayout();
             // 
             // label1
@@ -143,11 +144,23 @@
             divButton.UseVisualStyleBackColor = true;
             divButton.Click += button4_Click;
             // 
+            // exitButton
+            // 
+            exitButton.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            exitButton.Location = new Point(609, 245);
+            exitButton.Name = "exitButton";
+            exitButton.Size = new Size(147, 60);
+            exitButton.TabIndex = 10;
+            exitButton.Text = "EXIT";
+            exitButton.UseVisualStyleBackColor = true;
+            exitButton.Click += exitButton_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(exitButton);
             Controls.Add(divButton);
             Controls.Add(multButton);
             Controls.Add(subButton);
@@ -177,5 +190,6 @@
         private Button subButton;
         private Button multButton;
         private Button divButton;
+        private Button exitButton;
     }
 }
