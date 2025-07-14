@@ -63,7 +63,13 @@ namespace Counting_Project_Example
         // /
         private void button4_Click(object sender, EventArgs e)
         {
-
+            if (!string.IsNullOrEmpty(textEntry1.Text) && !string.IsNullOrEmpty(textEntry2.Text) && Convert.ToInt32(textEntry2.Text) != 0)
+            {
+                term1 = Convert.ToInt32(textEntry1.Text);
+                term2 = Convert.ToInt32(textEntry2.Text);
+                result = term1 / term2;
+                resultBox.Text = result.ToString();
+            }
         }
 
         // Entry 1
