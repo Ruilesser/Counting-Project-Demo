@@ -39,13 +39,25 @@ namespace Counting_Project_Example
         // -
         private void button2_Click(object sender, EventArgs e)
         {
-
+            if (!string.IsNullOrEmpty(textEntry1.Text) && !string.IsNullOrEmpty(textEntry2.Text))
+            {
+                term1 = Convert.ToInt32(textEntry1.Text);
+                term2 = Convert.ToInt32(textEntry2.Text);
+                result = term1 - term2;
+                resultBox.Text = result.ToString();
+            }
         }
 
         // *
         private void button3_Click(object sender, EventArgs e)
         {
-
+            if (!string.IsNullOrEmpty(textEntry1.Text) && !string.IsNullOrEmpty(textEntry2.Text))
+            {
+                term1 = Convert.ToInt32(textEntry1.Text);
+                term2 = Convert.ToInt32(textEntry2.Text);
+                result = term1 * term2;
+                resultBox.Text = result.ToString();
+            }
         }
 
         // /
